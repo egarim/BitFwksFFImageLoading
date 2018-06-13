@@ -14,6 +14,8 @@ namespace BitFwksFFImageLoading.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

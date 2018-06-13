@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BitFwksFFImageLoading"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="BitFwksFFImageLoading.MainPage">
 
     <StackLayout>
@@ -9,6 +10,11 @@
     	<Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+			WidthRequest="300" HeightRequest="300"
+			DownsampleToViewSize="true"
+			Source = "https://xamarinhelp.com/wp-content/uploads/2017/06/TraditionalvsForms.png">
+        </ffimageloading:CachedImage>
     </StackLayout>
 
 </ContentPage>

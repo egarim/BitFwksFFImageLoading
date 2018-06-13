@@ -22,6 +22,7 @@ namespace BitFwksFFImageLoading.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
